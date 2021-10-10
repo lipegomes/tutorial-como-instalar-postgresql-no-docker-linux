@@ -78,7 +78,7 @@ ou
 docker start 2b057c2cf612
 ```
 
-**2 - Acessar o PostgreSQL via terminal:**
+## **2 - Acessar o PostgreSQL via terminal:**
 
 **2.1 - Acessar o bash do PostgreSQL :**
 
@@ -134,7 +134,7 @@ Sempre que for utilizar o PostgreSQL será necessário utilizar o comando abaixo
 docker exec -it 2b057c2cf612 psql -h localhost -p 5432 -U postgres
 ```
 
-**3 - Criar um banco de dados utilizando o PostgreSQL via terminal:**
+## **3 - Criar um banco de dados utilizando o PostgreSQL via terminal:**
 
 **3.1 - Criar um banco de dados:**
 
@@ -318,7 +318,7 @@ Observe conforme imagem abaixo que os dados iseridos no item 3.9 se encontram pr
 
 ![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-39-53.png)
 
-**4 - Conectar e acessar o banco de dados pelo PgAdmin4:**
+## **4 - Conectar e acessar o banco de dados pelo PgAdmin4:**
 
 Para download do PgAdmin4 acesse o link abaixo, lembrando que deve instalar exatamente para o sistema de pacotes da sua distribuição linux:
 
@@ -360,7 +360,7 @@ Observer que a interface do PgAdmin4 agora propicia vários recursos e observe n
 
 ![2021-10-10_13-21-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-21-54.png)
 
-**5 - Conectar e acessar o banco de dados pelo DBeaver:**
+## **5 - Conectar e acessar o banco de dados pelo DBeaver:**
 
 Para download do DBeaver acesse o link abaixo:
 
@@ -389,11 +389,11 @@ https://dbeaver.io/download/
 ![2021-10-10_16-12-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_16-12-56.png)
 
 
-**6 - Diagrama do banco de dados criado:**
+## **6 - Diagrama do banco de dados criado:**
 
 ![diagram.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/database/diagram/diagram.png)
 
-**7 - Criar backup do banco de dados utilizando o terminal:**
+## **7 - Criar backup do banco de dados utilizando o terminal:**
 
 Utilizar o comando abaixo para entrar no bash do container do PostgreSQL:
 
@@ -451,7 +451,7 @@ Conforme imagem abaixo o arquivo de backup dump20211010.sql foi deletado:
 
 ![2021-10-10_15-22-00.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-22-00.png)
 
-**8 - Considerações finais:**
+## **8 - Considerações finais:**
 
 O objetivo desse tutorial não é fazer um CRUD(Create, Read, Update, Delete), mas sim aprender a utilizar PostgreSQL com Docker, PgAdmin4 e DBeaver. Se sinta a vontade para fazer um CRUD e criar seu próprio banco de dados e tabelas.
 
