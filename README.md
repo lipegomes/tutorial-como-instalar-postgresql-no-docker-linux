@@ -94,7 +94,7 @@ docker exec -it postgres bash
 pwd
 ```
 
-![2021-10-10_11-10-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-10-09.png)
+![2021-10-10_11-10-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-10-09.png)
 
 **2.4 - Acessar o postgres como root:**
 
@@ -102,7 +102,7 @@ pwd
 psql -U postgres
 ```
 
-![2021-10-10_11-11-58.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-11-58.png)
+![2021-10-10_11-11-58.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-11-58.png)
 
 **2.5 - Listar usuários:**
 
@@ -112,7 +112,7 @@ psql -U postgres
 
 Observe na imagem abaixo que o usuário postgres já tem atributos de superusuário:
 
-![2021-10-10_11-13-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-13-17.png)
+![2021-10-10_11-13-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-13-17.png)
 
 OBS: Caso queira sair do postgres, digite o comando abaixo até voltar para a tela inicial do seu terminal no seu usuário local da máquina, conforme imagem abaixo:
 
@@ -146,7 +146,7 @@ Há duas formas de se criar um banco de dados utilizando o PostgreSQL via termin
 CREATE DATABASE universidade;
 ```
 
-![2021-10-10_11-31-47.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-31-47.png)
+![2021-10-10_11-31-47.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-31-47.png)
 
 Caso queria deletar o banco de dados criado por algum motivo, digite o comando abaixo sabiamente:
 
@@ -154,7 +154,7 @@ Caso queria deletar o banco de dados criado por algum motivo, digite o comando a
 DROP DATABASE IF EXISTS universidade
 ```
 
-![2021-10-10_11-13-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-13-17.png)
+![2021-10-10_11-13-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-13-17.png)
 
 2 - Sem estar logado no usuário postgres, mas já com o docker e o container funcionado conforme item 1 descrito acima, digite o comando abaixo:
 
@@ -162,7 +162,7 @@ DROP DATABASE IF EXISTS universidade
 docker exec -it 2b057c2cf612 psql -U postgres -c "CREATE DATABASE universidade"
 ```
 
-![2021-10-10_11-28-27.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-28-27.png)
+![2021-10-10_11-28-27.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-28-27.png)
 
 Caso queria deletar o banco de dados criado por algum motivo, digite o comando abaixo sabiamente:
 
@@ -178,7 +178,7 @@ Ao utilizar o comando abaixo para listar os banco de dados existentes, ficará v
 \l
 ```
 
-![2021-10-10_11-39-11.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-39-11.png)
+![2021-10-10_11-39-11.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-39-11.png)
 
 **3.3 - Conexao com banco de dados criado:**
 
@@ -190,7 +190,7 @@ Para criar as tabelas será necessário se conectar ao banco de dados criado no 
 
 Observe na imagem abaixo que estamos conectado ao banco de dados universidade utilizando o usuário postgres:
 
-![2021-10-10_11-48-44.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_11-48-44.png)
+![2021-10-10_11-48-44.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-48-44.png)
 
 **3.4 - Criar tabelas:**
 
@@ -215,7 +215,7 @@ CREATE TABLE disciplinas(
 
 Observe na imagem abaixo que as tabelas foram criadas:
 
-![2021-10-10_12-05-16.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-05-16.png)
+![2021-10-10_12-05-16.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-05-16.png)
 
 **3.5 - Listar as tabelas criadas:**
 
@@ -236,7 +236,7 @@ Observe conforme imagem abaixo que as tabelas professores e disciplinas foram cr
 
 Observe na imagem abaixo que todos os parâmetros utilizados na query de criacao da table estão presentes:
 
-![2021-10-10_12-06-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-06-54.png)
+![2021-10-10_12-06-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-06-54.png)
 
 ```
 \d professores
@@ -244,7 +244,7 @@ Observe na imagem abaixo que todos os parâmetros utilizados na query de criacao
 
 Observe na imagem abaixo que todos os parâmetros utilizados na query de criação da tabela estão presentes:
 
-![2021-10-10_12-10-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-10-17.png)
+![2021-10-10_12-10-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-10-17.png)
 
 ```
 \d disciplinas
@@ -252,7 +252,7 @@ Observe na imagem abaixo que todos os parâmetros utilizados na query de criaç�
 
 Observe na imagem abaixo que todos os parâmetros utilizados na query de criação da tabela estão presentes:
 
-![2021-10-10_12-10-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-10-56.png)
+![2021-10-10_12-10-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-10-56.png)
 
 **3.7 - Inserir dados na tabela professor:**
 
@@ -284,7 +284,7 @@ SELECT * FROM professores;
 
 Observe conforme imagem abaixo que os dados iseridos no item 3.7 se encontram presentes na table professores:
 
-![2021-10-10_12-24-28.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-24-28.png)
+![2021-10-10_12-24-28.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-24-28.png)
 
 **3.9 - Inserir dados na tabela professor:**
 
@@ -316,7 +316,7 @@ SELECT * FROM disciplinas;
 
 Observe conforme imagem abaixo que os dados iseridos no item 3.9 se encontram presentes na table disciplinas:
 
-![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-39-53.png)
+![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-39-53.png)
 
 **4 - Conectar e acessar o banco de dados pelo PgAdmin4:**
 
@@ -330,35 +330,35 @@ Ao iniciar o PgAdmin4 ele irá solicitar a sua senha root do PostgreSQL, digite 
 
 Senha: 123456
 
-![2021-10-10_12-52-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-52-09.png)
+![2021-10-10_12-52-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-52-09.png)
 
 Clique em cima de Servers com botão direito do mouse e entre em Server:
 
-![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-39-53.png)
+![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-39-53.png)
 
 Já em Server, no campo Name digite o nome Local para nome do server:
 
-![2021-10-10_12-52-58.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-52-58.png)
+![2021-10-10_12-52-58.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-52-58.png)
 
 Em seguida entre na aba Connection e no campo Host name/address digite localhost. Em Password digite 123456 pois essa será a senha para acessar o banco de dados no PgAdmin4, em seguida clique em Save:
 
-![2021-10-10_12-53-08.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-53-08.png)
+![2021-10-10_12-53-08.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-53-08.png)
 
 Pronto, o PgAdmin4 está configurado e com acesso aos bancos de dados, conforme imagem abaixo, clique em no server Local para expandir, depois clique em Databases e em seguida clique sobre o banco de dados universidade para para o iniciar.
 
-![2021-10-10_12-53-33.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_12-53-33.png)
+![2021-10-10_12-53-33.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-53-33.png)
 
 Observe na imagem abaixo que as tabelas criadas no item 3.4 se encontram dentro de Schemas em Tables.
 
-![2021-10-10_13-17-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-17-56.png)
+![2021-10-10_13-17-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-17-56.png)
 
 Clique com botão o direito sobre a tabela disciplinas, depois vá em View/Edit Data e clique em All Rows para listar todas as linhas presentes na tabela disciplinas:
 
-![2021-10-10_13-19-41.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-19-41.png)
+![2021-10-10_13-19-41.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-19-41.png)
 
 Observer que a interface do PgAdmin4 agora propicia vários recursos e observe na imagem abaixo em Data Output a tabela disciplinas e todas as suas linhas:
 
-![2021-10-10_13-21-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-21-54.png)
+![2021-10-10_13-21-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-21-54.png)
 
 **5 - Conectar e acessar o banco de dados pelo DBeaver:**
 
@@ -369,7 +369,7 @@ https://dbeaver.io/download/
 - Ir em: Database > New Database Connection
 - Conforme imagem abaixo, clique no icone do PostgreSQL e depois clique em next( botão na parte inferior).
 
-![2021-10-10_13-28-26.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-28-26.png)
+![2021-10-10_13-28-26.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-28-26.png)
 
 - Confome imagem abaixo, use os seguintes valores:
 
@@ -378,20 +378,20 @@ https://dbeaver.io/download/
   - Username: postgres
   - Password: 123456
 
-![2021-10-10_13-30-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-30-17.png)
+![2021-10-10_13-30-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-30-17.png)
 
   - Clique em Test Connection para verificar se a configuração está correta e realizar uma conexão com sucesso.
 
-![2021-10-10_13-30-34.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_13-30-34.png)
+![2021-10-10_13-30-34.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_13-30-34.png)
 
 - Agora o PostgreSQL está configurado no DBeaver para uso no Linux conforme imagem abaixo:
 
-![2021-10-10_16-12-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_16-12-56.png)
+![2021-10-10_16-12-56.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_16-12-56.png)
 
 
 **6 - Diagrama do banco de dados criado:**
 
-![diagram.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/diagram/diagram.png)
+![diagram.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/database/diagram/diagram.png)
 
 **7 - Criar backup do banco de dados utilizando o terminal:**
 
@@ -407,7 +407,7 @@ Digitar o comando abaixo para listar as pastas ou arquivos presentes no diretori
 ls
 ```
 
-![2021-10-10_15-03-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_15-03-54.png)
+![2021-10-10_15-03-54.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-03-54.png)
 
 Em seguida, digite o comando abaixo para criar o backup do banco de dados universidade:
 
@@ -417,7 +417,7 @@ pg_dump -U postgres -h localhost -p 5432 universidade > dump20211010.sql
 
 Digite novamente o comando ls para para listar as pastas ou arquivos presentes no diretorio, observe que o arquivo dump20211010.sql foi criado conforme imagem:
 
-![2021-10-10_15-12-12.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_15-12-12.png)
+![2021-10-10_15-12-12.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-12-12.png)
 
 Agora utiliza o comando abaixo em uma nova janela/aba do terminal para criar uma cópia do arquivo de backup dump20211010.sql o movendo para o diretório desejado:
 
@@ -439,7 +439,7 @@ ls /home/filipe/mydocs/dev/docker/tutorial-como-instalar-postgresql-no-docker-li
 
 Conforme imagem abaixo podemos observar que o arquivo de backup criado foi copiado para o diretório desejado:
 
-![2021-10-10_15-18-37.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_15-18-37.png)
+![2021-10-10_15-18-37.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-18-37.png)
 
 Em seguida, recomendo que delete o arquivo de backup criado dentro do container docker para não encher o mesmo de arquivo desnecessário(ou deixe ele ali pelo tempo que você necessitar), use o comando abaixo para deletar o arquivo dump20211010.sql:
 
@@ -449,7 +449,7 @@ rm -rf dump20211010.sql
 
 Conforme imagem abaixo o arquivo de backup dump20211010.sql foi deletado:
 
-![2021-10-10_15-22-00.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/2021-10-10_15-22-00.png)
+![2021-10-10_15-22-00.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-22-00.png)
 
 **8 - Considerações finais:**
 
