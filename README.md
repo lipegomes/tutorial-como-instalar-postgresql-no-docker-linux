@@ -205,13 +205,14 @@ CREATE TABLE professores(
 );
 ```
 
+```
 CREATE TABLE disciplinas(
     codigo VARCHAR(20) NOT NULL PRIMARY KEY,
     titulo VARCHAR(1000) NOT NULL,
     professor_matricula VARCHAR(10) NOT NULL,
     CONSTRAINT fk_professor_disciplinas FOREIGN KEY(professor_matricula) REFERENCES professores
 );
-
+```
 
 Observe na imagem abaixo que as tabelas foram criadas:
 
