@@ -287,7 +287,7 @@ Observe conforme imagem abaixo que os dados iseridos no item 3.7 se encontram pr
 
 ![2021-10-10_12-24-28.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-24-28.png)
 
-**3.9 - Inserir dados na tabela professor:**
+**3.9 - Inserir dados na tabela disciplinas:**
 
 Utilizar as queries abaixo para inserir dados na tabela disciplinas dentro do banco de dados universidade:
 
@@ -307,7 +307,7 @@ INSERT INTO disciplinas (codigo, titulo, professor_matricula) VALUES('MQ198', 'M
 INSERT INTO disciplinas (codigo, titulo, professor_matricula) VALUES('FS572', 'Física dos Sólidos', '0023-1');
 ```
 
-**3.10 - Verificar a tabela professores:**
+**3.10 - Verificar a tabela disciplinas:**
 
 O comando abaixo seleciona todos(*) os items presentes na tabela professores e os lista:
 
