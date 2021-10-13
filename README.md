@@ -114,7 +114,7 @@ Observe na imagem abaixo que o usuário postgres já tem atributos de superusuá
 
 ![2021-10-10_11-13-17.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-13-17.png)
 
-OBS: Caso queira sair do postgres, digite o comando abaixo até voltar para a tela inicial do seu terminal no seu usuário local da máquina, conforme imagem abaixo:
+OBS: Caso queira sair do postgres, digite o comando abaixo até voltar para a tela inicial do seu terminal no seu usuário local da máquina:
 
 ```
 exit
@@ -133,6 +133,7 @@ Sempre que for utilizar o PostgreSQL será necessário utilizar o comando abaixo
 ```
 docker exec -it 2b057c2cf612 psql -h localhost -p 5432 -U postgres
 ```
+Obs: No comando acima utilize o seu container id no lugar de 2b057c2cf612.
 
 ## **3 - Criar um banco de dados utilizando o PostgreSQL via terminal:**
 
@@ -226,9 +227,6 @@ Utilizar o comando abaixo para listar as relações presentes no banco de dados 
 \dt
 ```
 
-Observe conforme imagem abaixo que as tabelas professores e disciplinas foram criadas:
-
-
 **3.6 - Listar os parâmetros das tabelas criadas:**
 
 ```
@@ -287,7 +285,7 @@ Observe conforme imagem abaixo que os dados iseridos no item 3.7 se encontram pr
 
 ![2021-10-10_12-24-28.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-24-28.png)
 
-**3.9 - Inserir dados na tabela disciplinas:**
+**3.9 - Inserir dados na tabela disciplinas    :**
 
 Utilizar as queries abaixo para inserir dados na tabela disciplinas dentro do banco de dados universidade:
 
@@ -331,11 +329,11 @@ Ao iniciar o PgAdmin4 ele irá solicitar a sua senha root do PostgreSQL, digite 
 
 Senha: 123456
 
-![2021-10-10_12-52-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-52-09.png)
+![2021-10-10_12-45-31.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-45-31.png)
 
 Clique em cima de Servers com botão direito do mouse e entre em Server:
 
-![2021-10-10_12-39-53.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-39-53.png)
+![2021-10-10_12-52-09.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_12-52-09.png)
 
 Já em Server, no campo Name digite o nome Local para nome do server:
 
