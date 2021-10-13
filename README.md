@@ -88,7 +88,7 @@ docker exec -it postgres bash
 
 ![2021-10-10_11-09-35.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_11-09-35.png)
 
-**2.3 Verificar o diretorio é exatamente /:**
+**2.3 Verificar o diretório é exatamente /:**
 
 ```
 pwd
@@ -400,7 +400,7 @@ Utilizar o comando abaixo para entrar no bash do container do PostgreSQL:
 docker exec -it postgres bash
 ```
 
-Digitar o comando abaixo para listar as pastas ou arquivos presentes no diretorio:
+Digitar o comando abaixo para listar as pastas ou arquivos presentes no diretório:
 
 ```
 ls
@@ -414,11 +414,11 @@ Em seguida, digite o comando abaixo para criar o backup do banco de dados univer
 pg_dump -U postgres -h localhost -p 5432 universidade > dump20211010.sql
 ```
 
-Digite novamente o comando ls para para listar as pastas ou arquivos presentes no diretorio, observe que o arquivo dump20211010.sql foi criado conforme imagem:
+Digite novamente o comando ls para para listar as pastas ou arquivos presentes no diretório, observe que o arquivo dump20211010.sql foi criado conforme imagem:
 
 ![2021-10-10_15-12-12.png](https://github.com/lipegomes/tutorial-como-instalar-postgresql-no-docker-linux/blob/main/assets/img/2021-10-10_15-12-12.png)
 
-Agora utiliza o comando abaixo em uma nova janela/aba do terminal para criar uma cópia do arquivo de backup dump20211010.sql o movendo para o diretório desejado:
+Agora utilize o comando abaixo em uma nova janela/aba do terminal para criar uma cópia do arquivo de backup dump20211010.sql o movendo para o diretório desejado:
 
 ```
 docker cp 2b057c2cf612:/dump20211010.sql /home/filipe/mydocs/dev/docker/tutorial-como-instalar-postgresql-no-docker-linux/database/backup/Dump20211010/
